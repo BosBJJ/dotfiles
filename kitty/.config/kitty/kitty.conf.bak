@@ -3269,3 +3269,14 @@
 include current-theme.conf
 editor nvim
 # END_KITTY_THEME
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="JetBrains Mono"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+# Disable the default Ctrl+T new tab mapping
+map ctrl+t noop
+# END_KITTY_FONTS
