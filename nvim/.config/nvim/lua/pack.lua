@@ -1,11 +1,14 @@
 vim.pack.add({
     "https://github.com/bluz71/vim-moonfly-colors",
+    "https://github.com/folke/tokyonight.nvim",
     "https://github.com/nvim-mini/mini.nvim",
     "https://github.com/rafamadriz/friendly-snippets",
     { src = "https://github.com/nvim-treesitter/nvim-treesitter", branch = "main" },
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/mason-org/mason.nvim",
     "https://github.com/tpope/vim-fugitive",
+    { src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
+    { src = "https://github.com/nvim-tree/nvim-web-devicons" },
 })
 
 ---- mini files ----
@@ -93,8 +96,11 @@ vim.keymap.set("n", "<leader>gg", "<cmd>tabnew | Git | only<cr>", { desc = "Fugi
 vim.keymap.set("n", "<leader>gd", "<cmd>Gvdiffsplit<CR>", { desc = "Git diff split", })
 
 -- nvim treesitter --
-require("treesitter")
+require("plugins.treesitter")
 
 
 -- lsp --
-require("lsp")
+require("plugins.lsp")
+
+-- markdown --
+require("plugins.render-markdown")

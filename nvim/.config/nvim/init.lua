@@ -4,3 +4,5 @@ require("options")
 require("keymaps")
 require("commands")
 require("pack")
+
+vim.cmd.colorscheme("tokyonight-night")
